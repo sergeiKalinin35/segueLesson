@@ -72,3 +72,44 @@ private func petAnimal() {
         print("The animal is Bird")
     }
 }
+
+
+
+func getPets() -> [Animal] {
+    var pets: [Animal] = []
+
+    let numberOfDogs = Int.random(in: 1...20)
+    let numberOfCats = Int.random(in: 1...20)
+    let numberOfBirds = Int.random(in: 1...20)
+    
+    for _ in 1...numberOfDogs {
+        let dog = Dog()
+        pets.append(dog)
+    }
+    
+    
+    for _ in 1...numberOfCats {
+        let cat = Cat()
+        pets.append(cat)
+    }
+    
+    
+    for _ in 1...numberOfBirds {
+        let bird = Bird()
+        pets.append(bird)
+    }
+    
+    return pets
+}
+
+
+
+
+
+
+
+
+
+
+
+
